@@ -1,3 +1,4 @@
+import Logo from "../assets/logo.png";
 import { useState } from "react";
 import {
   NavigationMenu,
@@ -16,7 +17,6 @@ import { GitHubLogoIcon } from "@radix-ui/react-icons";
 import { buttonVariants } from "./ui/button";
 import { Menu } from "lucide-react";
 import { ModeToggle } from "./mode-toggle";
-import { LogoIcon } from "./Icons";
 
 interface RouteProps {
   href: string;
@@ -25,20 +25,16 @@ interface RouteProps {
 
 const routeList: RouteProps[] = [
   {
-    href: "#features",
-    label: "Features",
+    href: "#Sobre",
+    label: "Sobre",
   },
   {
-    href: "#testimonials",
-    label: "Testimonials",
+    href: "#Serviços",
+    label: "Serviços",
   },
   {
-    href: "#pricing",
-    label: "Pricing",
-  },
-  {
-    href: "#faq",
-    label: "FAQ",
+    href: "#Preço",
+    label: "Preço",
   },
 ];
 
@@ -54,8 +50,15 @@ export const Navbar = () => {
               href="/"
               className="ml-2 font-bold text-xl flex"
             >
-              <LogoIcon />
-              ShadcnUI/React
+
+              <img 
+                className="rounded-sm"
+                src={Logo}
+                width={70}
+                height={70}
+                alt="logo"
+              />
+
             </a>
           </NavigationMenuItem>
 
@@ -105,6 +108,9 @@ export const Navbar = () => {
                     <GitHubLogoIcon className="mr-2 w-5 h-5" />
                     Github
                   </a>
+
+                
+
                 </nav>
               </SheetContent>
             </Sheet>
@@ -127,15 +133,8 @@ export const Navbar = () => {
           </nav>
 
           <div className="hidden md:flex gap-2">
-            <a
-              rel="noreferrer noopener"
-              href="https://github.com/leoMirandaa/shadcn-landing-page.git"
-              target="_blank"
-              className={`border ${buttonVariants({ variant: "secondary" })}`}
-            >
-              <GitHubLogoIcon className="mr-2 w-5 h-5" />
-              Github
-            </a>
+            <a href="">Login</a>
+            <a href="">Cadastro</a>
 
             <ModeToggle />
           </div>
