@@ -3,11 +3,27 @@ import ReactDOM from "react-dom/client";
 import App from "./App.tsx";
 import { ThemeProvider } from "@/components/theme-provider.tsx";
 import "./index.css";
+import Login from './components/form-login.tsx'
 
-ReactDOM.createRoot(document.getElementById("root")!).render(
-  <React.StrictMode>
+import { createBrowserRouter, RouterProvider, } from "react-router";
+
+function Landingpage() {
+  return (
     <ThemeProvider>
       <App />
     </ThemeProvider>
-  </React.StrictMode>
+  )
+}
+
+const router = createBrowserRouter([
+  { path: "/", Component: Landingpage },
+  { path: "/login", Component: Login }
+]);
+
+ReactDOM.createRoot(document.getElementById("root")!).render(
+  <>
+    <React.StrictMode>
+      <RouterProvider router={router} />
+    </React.StrictMode>
+  </>
 );
