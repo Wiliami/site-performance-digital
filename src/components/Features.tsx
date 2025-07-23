@@ -1,4 +1,3 @@
-import { Badge } from "./ui/badge";
 import {
   Card,
   CardContent,
@@ -6,9 +5,9 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import image from "../assets/growth.png";
-import image3 from "../assets/reflecting.png";
-import image4 from "../assets/looking-ahead.png";
+import image from "../assets/image1.jpg";
+import image3 from "../assets/image2.jpg";
+import image4 from "../assets/image4.svg";
 
 interface FeatureProps {
   title: string;
@@ -18,36 +17,26 @@ interface FeatureProps {
 
 const features: FeatureProps[] = [
   {
-    title: "Responsive Design",
+    title: "🚀 1. ATRAÇÃO (Topo do Funil - Awareness)",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nesciunt est nostrum omnis ab sapiente.",
+      "Estratégias: Marketing de Conteúdo: Publicações em blog, eBooks, infográficos, vídeos educativos.",
     image: image4,
   },
   {
-    title: "Intuitive user interface",
+    title: "💡 2. ENGAJAMENTO (Meio do Funil - Consideração)",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nesciunt est nostrum omnis ab sapiente.",
+      "Objetivo: Gerar interesse, nutrir leads e fortalecer relacionamento.",
     image: image3,
   },
   {
-    title: "AI-Powered insights",
+    title: "💰 3. CONVERSÃO (Fundo do Funil - Decisão)",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nesciunt est nostrum omnis ab sapiente.",
+      "Objetivo: Fazer a venda, fechar contrato ou realizar a ação desejada.",
     image: image,
   },
 ];
 
-const featureList: string[] = [
-  "Dark/Light theme",
-  "Reviews",
-  "Features",
-  "Pricing",
-  "Contact form",
-  "Our team",
-  "Responsive design",
-  "Newsletter",
-  "Minimalist",
-];
+
 
 export const Features = () => {
   return (
@@ -61,19 +50,6 @@ export const Features = () => {
           serviços
         </span>
       </h2>
-
-      <div className="flex flex-wrap md:justify-center gap-4">
-        {featureList.map((feature: string) => (
-          <div key={feature}>
-            <Badge
-              variant="secondary"
-              className="text-sm"
-            >
-              {feature}
-            </Badge>
-          </div>
-        ))}
-      </div>
 
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
         {features.map(({ title, description, image }: FeatureProps) => (

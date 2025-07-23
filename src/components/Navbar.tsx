@@ -13,7 +13,6 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet";
 
-import { GitHubLogoIcon } from "@radix-ui/react-icons";
 import { buttonVariants } from "./ui/button";
 import { Menu } from "lucide-react";
 import { ModeToggle } from "./mode-toggle";
@@ -52,9 +51,9 @@ export const Navbar = () => {
             >
 
               <img 
-                className="rounded-sm"
+                className="rounded-full bg-black dark:bg-transparent"
                 src={Logo}
-                width={70}
+                width={50}
                 height={70}
                 alt="logo"
               />
@@ -105,12 +104,7 @@ export const Navbar = () => {
                       variant: "secondary",
                     })}`}
                   >
-                    <GitHubLogoIcon className="mr-2 w-5 h-5" />
-                    Github
                   </a>
-
-                
-
                 </nav>
               </SheetContent>
             </Sheet>
@@ -131,13 +125,16 @@ export const Navbar = () => {
               </a>
             ))}
           </nav>
+            
+          <div className="hidden md:flex gap-2 items-center">
+            <a href="#" className="text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 dark:bg-green-600 dark:hover:bg-green-400-700 focus:outline-none dark:focus:ring-blue-800">Login</a>
 
-          <div className="hidden md:flex gap-2">
-            <a href="">Login</a>
-            <a href="">Cadastro</a>
-
+            <a href="#">Cadastro</a>
             <ModeToggle />
+
           </div>
+          
+
         </NavigationMenuList>
       </NavigationMenu>
     </header>

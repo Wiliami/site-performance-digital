@@ -16,10 +16,10 @@ interface TestimonialProps {
 
 const testimonials: TestimonialProps[] = [
   {
-    image: "https://github.com/shadcn.png",
-    name: "John Doe React",
-    userName: "@john_Doe",
-    comment: "This landing page is awesome!",
+    image: "https://avatars.githubusercontent.com/u/67030481?v=4",
+    name: "Wiliamis Oliveira",
+    userName: "@wiliamis.oli",
+    comment: "É incrível como a estratégia funciona, as minhas redes sociais tiveram resultados muitos satisfatórios!",
   },
   {
     image: "https://github.com/shadcn.png",
@@ -43,35 +43,22 @@ const testimonials: TestimonialProps[] = [
     comment:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
   },
-  {
-    image: "https://github.com/shadcn.png",
-    name: "John Doe React",
-    userName: "@john_Doe4",
-    comment:
-      "Lorem ipsum dolor sit amet, tempor incididunt  aliqua. Ut enim ad minim veniam, quis nostrud.",
-  },
-  {
-    image: "https://github.com/shadcn.png",
-    name: "John Doe React",
-    userName: "@john_Doe5",
-    comment:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-  },
+  
 ];
 
-export const Testimonials = () => {
+export const  Testimonials = () => {
   return (
     <section
       id="testimonials"
       className="container py-24 sm:py-32"
     >
       <h2 className="text-3xl md:text-4xl font-bold">
-        Discover Why
+        O que as
         <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">
           {" "}
-          People Love{" "}
+          pessoas estão {" "}
         </span>
-        This Landing Page
+        falando da gente.
       </h2>
 
       <p className="text-xl text-muted-foreground pt-4 pb-8">

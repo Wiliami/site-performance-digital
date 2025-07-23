@@ -1,23 +1,28 @@
 import { Button } from "./ui/button";
 import Logo from "../assets/logo.png";
+import { Phone } from 'lucide-react';
 
 
 export const Hero = () => {
   return (
     <section className="container grid lg:grid-cols-1 place-items-center py-20 md:py-32 gap-10">
        <img 
-        className="rounded-sm"
+        className="rounded-sm bg-black dark:bg-transparent"
         src={Logo}
         width={250}
         height={300}
         alt="logo"
         />
-      <p>☎️ (92) 3222-9598</p>
+      <div className="flex">
+        <Phone color="red" />
+        <p>(92) 3222-9598</p>
+      </div>
+      
       <div className="text-center lg:text-center space-y-6">
        
         <main className="text-5xl md:text-6xl font-bold">
           <h2 className="inline">
-            <span className="inline text-4xl text-white text-transparent bg-clip-text">
+            <span className="inline text-4xl text-slate-900 dark:text-white text-transparent bg-clip-text">
               Investiu no <b className="text-green-500">Marketing</b>, porém não gerou o retorno esperado?
             </span>{" "}
           </h2>
