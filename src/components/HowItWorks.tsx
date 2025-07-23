@@ -4,33 +4,24 @@ import { MedalIcon, MapIcon, PlaneIcon, GiftIcon } from "../components/Icons";
 interface FeatureProps {
   icon: JSX.Element;
   title: string;
-  description: string;
 }
 
 const features: FeatureProps[] = [
   {
     icon: <MedalIcon />,
     title: "Captação de Leads",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum quas provident cum",
   },
   {
     icon: <MapIcon />,
     title: "Processo de Vendas",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum quas provident cum",
   },
   {
     icon: <PlaneIcon />,
     title: "Onboarding",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum quas provident cum",
   },
   {
     icon: <GiftIcon />,
     title: "Acompanhamento e Resultados",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum quas provident cum",
   },
 ];
 
@@ -51,7 +42,7 @@ export const HowItWorks = () => {
       </p>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-        {features.map(({ icon, title, description }: FeatureProps) => (
+        {features.map(({ icon, title }: FeatureProps) => (
           <Card
             key={title}
             className="bg-muted/50"
@@ -62,7 +53,7 @@ export const HowItWorks = () => {
                 {title}
               </CardTitle>
             </CardHeader>
-            <CardContent>{description}</CardContent>
+            {/* <CardContent></CardContent> */}
           </Card>
         ))}
       </div>

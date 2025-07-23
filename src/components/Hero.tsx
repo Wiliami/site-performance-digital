@@ -1,20 +1,19 @@
 import { Button } from "./ui/button";
-import Logo from "../assets/logo.png";
+import Logo from "../assets/logotipo.png";
 import { Phone } from 'lucide-react';
-
 
 export const Hero = () => {
   return (
     <section className="container grid lg:grid-cols-1 place-items-center py-20 md:py-32 gap-10">
        <img 
-        className="rounded-sm bg-black dark:bg-transparent"
+        className="rounded-sm bg-gray-900 dark:bg-transparent"
         src={Logo}
         width={250}
         height={300}
-        alt="logo"
+        alt="Logo"
         />
-      <div className="flex">
-        <Phone color="red" />
+      <div className="flex justify-end">
+        <Phone color="red"/>
         <p>(92) 3222-9598</p>
       </div>
       
@@ -30,7 +29,7 @@ export const Hero = () => {
       
           <h4 className="block text-4xl">
           Seu negócio
-            <span className="inline text-red-500">{" "}
+            <span className="inline text-red-600">{" "}
               precisa de uma avaliação urgente!
             </span>
           </h4>

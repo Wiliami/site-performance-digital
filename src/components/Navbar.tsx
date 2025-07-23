@@ -1,4 +1,4 @@
-import Logo from "../assets/logo.png";
+import Logo from "../assets/logotipo.png";
 import { useState } from "react";
 import {
   NavigationMenu,
@@ -51,7 +51,7 @@ export const Navbar = () => {
             >
 
               <img 
-                className="rounded-full bg-black dark:bg-transparent"
+                className="rounded-full dark:bg-transparent"
                 src={Logo}
                 width={50}
                 height={70}

@@ -5,9 +5,10 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import image from "../assets/image1.jpg";
-import image3 from "../assets/image2.jpg";
-import image4 from "../assets/image4.svg";
+import image1 from "../assets/image1.jpg";
+import image2 from "../assets/image2.png";
+import image3 from "../assets/image4.svg";
+import { version } from "node:os";
 
 interface FeatureProps {
   title: string;
@@ -17,22 +18,22 @@ interface FeatureProps {
 
 const features: FeatureProps[] = [
   {
-    title: "🚀 1. ATRAÇÃO (Topo do Funil - Awareness)",
+    title: "🚀 1. Atração",
     description:
-      "Estratégias: Marketing de Conteúdo: Publicações em blog, eBooks, infográficos, vídeos educativos.",
-    image: image4,
+      "(Topo do Funil - Awareness).",
+    image: image1,
   },
   {
-    title: "💡 2. ENGAJAMENTO (Meio do Funil - Consideração)",
+    title: "💡 2. Engajamento",
     description:
-      "Objetivo: Gerar interesse, nutrir leads e fortalecer relacionamento.",
-    image: image3,
+      "(Meio do Funil - Consideração).",
+    image: image2,
   },
   {
-    title: "💰 3. CONVERSÃO (Fundo do Funil - Decisão)",
+    title: "💰 3. Conversão",
     description:
-      "Objetivo: Fazer a venda, fechar contrato ou realizar a ação desejada.",
-    image: image,
+      "(Fundo do Funil - Decisão)",
+    image: image2,
   },
 ];
 

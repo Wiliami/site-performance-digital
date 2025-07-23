@@ -61,7 +61,7 @@ const teamList: TeamProps[] = [
     ],
   },
   {
-    image: "https://i.pravatar.cc/150?img=12",
+    image: "https://avatars.githubusercontent.com/u/67030481?v=4",
     name: "Wiliamis Oliveira",
     position: "Developer",
     socialNetworks: [
@@ -114,14 +114,13 @@ export const Team = () => {
     >
       <h2 className="text-3xl md:text-4xl font-bold">
         <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">
-          Nossa dedicada{" "}
+          Conheça nosso {" "}
         </span>
-        equipe
+        time
       </h2>
 
       <p className="mt-4 mb-10 text-xl text-muted-foreground">
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis
-        dolor pariatur sit!
+        Equipe dedicada em alavancar o seu negócio utilizando estratégias de marketing e mídia.
       </p>
 
       <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 gap-y-10">
@@ -143,9 +142,9 @@ export const Team = () => {
                 </CardDescription>
               </CardHeader>
 
-              <CardContent className="text-center pb-2">
+              {/* <CardContent className="text-center pb-2">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-              </CardContent>
+              </CardContent> */}
 
               <CardFooter>
                 {socialNetworks.map(({ name, url }: SociaNetworkslProps) => (
