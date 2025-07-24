@@ -1,5 +1,8 @@
 import { Card, CardContent, CardHeader, CardTitle } from "./ui/card";
 import { MedalIcon, MapIcon, PlaneIcon, GiftIcon } from "../components/Icons";
+import { Headset  } from 'lucide-react';
+
+
 
 interface FeatureProps {
   icon: JSX.Element;
@@ -27,6 +30,9 @@ const features: FeatureProps[] = [
 
 export const HowItWorks = () => {
   return (
+    
+    <>
+    <Headset className="text-green-700" size={50} />
     <section
       id="howItWorks"
       className="container text-center py-24 sm:py-32"
@@ -58,5 +64,6 @@ export const HowItWorks = () => {
         ))}
       </div>
     </section>
+    </>
   );
 };

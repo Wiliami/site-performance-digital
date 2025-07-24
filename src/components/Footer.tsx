@@ -1,4 +1,4 @@
-import { LogoIcon } from "./Icons";
+import Logo from "../../src/assets/logotipo.png";
 
 export const Footer = () => {
   return (
@@ -12,13 +12,13 @@ export const Footer = () => {
             href="/"
             className="font-bold text-xl flex"
           >
-            <LogoIcon />
-            ShadcnUI/React
+            {/* <Logo /> */}
+            Perfomance Digital
           </a>
         </div>
 
         <div className="flex flex-col gap-2">
-          <h3 className="font-bold text-lg">Follow US</h3>
+          <h3 className="font-bold text-lg">Siga-nos</h3>
           <div>
             <a
               rel="noreferrer noopener"
@@ -51,7 +51,7 @@ export const Footer = () => {
         </div>
 
         <div className="flex flex-col gap-2">
-          <h3 className="font-bold text-lg">Platforms</h3>
+          <h3 className="font-bold text-lg">Plataformas</h3>
           <div>
             <a
               rel="noreferrer noopener"
@@ -84,14 +84,14 @@ export const Footer = () => {
         </div>
 
         <div className="flex flex-col gap-2">
-          <h3 className="font-bold text-lg">About</h3>
+          <h3 className="font-bold text-lg">Sobre nós</h3>
           <div>
             <a
               rel="noreferrer noopener"
               href="#"
               className="opacity-60 hover:opacity-100"
             >
-              Features
+              Funcionalidades
             </a>
           </div>
 
@@ -101,7 +101,7 @@ export const Footer = () => {
               href="#"
               className="opacity-60 hover:opacity-100"
             >
-              Pricing
+              Preços
             </a>
           </div>
 
@@ -117,7 +117,7 @@ export const Footer = () => {
         </div>
 
         <div className="flex flex-col gap-2">
-          <h3 className="font-bold text-lg">Community</h3>
+          <h3 className="font-bold text-lg">Comunidade</h3>
           <div>
             <a
               rel="noreferrer noopener"
@@ -152,7 +152,7 @@ export const Footer = () => {
 
       <section className="container pb-14 text-center">
         <h3>
-          &copy; 2024 Landing page made by{" "}
+          &copy; 2025 Landing page made by{" "}
           <a
             rel="noreferrer noopener"
             target="_blank"

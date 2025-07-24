@@ -30,44 +30,44 @@ const pricingList: PricingProps[] = [
     popular: 0,
     price: 0,
     description:
-      "Lorem ipsum dolor sit, amet ipsum consectetur adipisicing elit.",
-    buttonText: "Get Started",
+      "Serviços dedicados para o sucesso da sua empresa.",
+    buttonText: "Iniciar",
     benefitList: [
-      "1 Team member",
-      "2 GB Storage",
-      "Upto 4 pages",
-      "Community support",
-      "lorem ipsum dolor",
+      "1 membro da equipe",
+      "2 GB de armazenamento",
+      "Até 4 páginas",
+      "Suporte da comunidade",
+      "Edição de páginas HTML",
     ],
   },
   {
     title: "Premium",
     popular: 1,
-    price: 5,
+    price: 700,
     description:
-      "Lorem ipsum dolor sit, amet ipsum consectetur adipisicing elit.",
-    buttonText: "Start Free Trial",
+      "Serviços dedicados para o sucesso da sua empresa.",
+    buttonText: "Iniciar teste grátis",
     benefitList: [
-      "4 Team member",
-      "4 GB Storage",
-      "Upto 6 pages",
-      "Priority support",
-      "lorem ipsum dolor",
+      "4 membros da equipe",
+      "4 GB de armazenamento",
+      "Até 6 páginas",
+      "Prioridade no suporte",
+      "Edição de páginas HTML",
     ],
   },
   {
-    title: "Enterprise",
+    title: "Empresarial",
     popular: 0,
-    price: 40,
+    price: 1000,
     description:
-      "Lorem ipsum dolor sit, amet ipsum consectetur adipisicing elit.",
-    buttonText: "Contact US",
+      "Serviços dedicados para o sucesso da sua empresa.",
+    buttonText: "Contate-nos",
     benefitList: [
-      "10 Team member",
-      "8 GB Storage",
-      "Upto 10 pages",
-      "Priority support",
-      "lorem ipsum dolor",
+      "10 membros da equipe",
+      "8 GB de armazenamento",
+      "Até 10 páginas",
+      "Prioridade no suporte",
+      "Edição de páginas HTML"
     ],
   },
 ];
@@ -79,16 +79,15 @@ export const Pricing = () => {
       className="container py-24 sm:py-32"
     >
       <h2 className="text-3xl md:text-4xl font-bold text-center">
-        Obtenha
+        Conheça
         <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">
           {" "}
-          Acesso{" "}
+          nossos{" "}
         </span>
-        ilimitado
+        planos
       </h2>
       <h3 className="text-xl text-center text-muted-foreground pt-4 pb-8">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
-        reiciendis.
+        Obtenha os serviços que mais se encaixam com o negócio da sua empresa.
       </h3>
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
         {pricingList.map((pricing: PricingProps) => (
@@ -108,13 +107,13 @@ export const Pricing = () => {
                     variant="secondary"
                     className="text-sm text-primary"
                   >
-                    Most popular
+                    Recomendado
                   </Badge>
                 ) : null}
               </CardTitle>
               <div>
-                <span className="text-3xl font-bold">${pricing.price}</span>
-                <span className="text-muted-foreground"> /month</span>
+                <span className="text-3xl font-bold">R${pricing.price}</span>
+                <span className="text-muted-foreground"> /mensal</span>
               </div>
 
               <CardDescription>{pricing.description}</CardDescription>

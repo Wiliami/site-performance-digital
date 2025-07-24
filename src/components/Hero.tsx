@@ -21,7 +21,7 @@ export const Hero = () => {
        
         <main className="text-5xl md:text-6xl font-bold">
           <h2 className="inline">
-            <span className="inline text-4xl text-slate-900 dark:text-white text-transparent bg-clip-text">
+            <span className="inline text-4xl text-black dark:text-white bg-clip-text">
               Investiu no <b className="text-green-500">Marketing</b>, porém não gerou o retorno esperado?
             </span>{" "}
           </h2>
