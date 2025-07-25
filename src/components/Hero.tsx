@@ -6,15 +6,16 @@ export const Hero = () => {
   return (
     <section className="container grid lg:grid-cols-1 place-items-center py-20 md:py-32 gap-10">
        <img 
-        className="rounded-sm bg-gray-900 dark:bg-transparent"
+        className="rounded-sm dark:bg-transparent"
+        // bg-gray-900
         src={Logo}
-        width={250}
+        width={280}
         height={300}
         alt="Logo"
         />
-      <div className="flex justify-end">
+      <div className="flex items-center gap-x-2">
         <Phone color="red"/>
-        <p>(92) 3222-9598</p>
+        <span>(92) 3222-9598</span>
       </div>
       
       <div className="text-center lg:text-center space-y-6">

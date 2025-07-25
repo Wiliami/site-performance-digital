@@ -53,8 +53,8 @@ export const Navbar = () => {
               <img 
                 className="rounded-full dark:bg-transparent"
                 src={Logo}
-                width={50}
-                height={70}
+                width={70}
+                height={75}
                 alt="logo"
               />
 
