@@ -14,7 +14,7 @@ const testimonials = [
     image: 'https://i.pravatar.cc/100?img=65',
     rating: 5,
     feedback:
-      'Antes da Performance Digital, tínhamos dificuldades em aparecer no Google e quase não recebíamos contatos novos. Depois do trabalho de otimização, nossa oficina passou a se destacar nas buscas, e hoje já estamos gerando leds consistentes toda semana. O resultado superou nossas expectativas!.',
+      'Antes da Performance Digital, tínhamos dificuldades em aparecer no Google e quase não recebíamos contatos novos. Depois do trabalho de otimização, nossa oficina passou a se destacar nas buscas, e hoje já estamos gerando leads consistentes toda semana. O resultado superou nossas expectativas!.',
   },
   {
     name: 'Salão Deus é Mestre',
