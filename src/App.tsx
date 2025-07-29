@@ -1,3 +1,4 @@
+import { Title } from "./components/Title"
 import { Navbar } from "./components/Navbar";
 import { Hero } from "./components/Hero";
 import { About } from "./components/About";
@@ -10,9 +11,10 @@ import { Footer } from "./components/Footer";
 import { ScrollToTop } from "./components/ScrollToTop";
 import "./App.css";
 
-function App() {
+function App() {  
   return (
     <>
+      <Title />
       <Navbar />
       <Hero />
       <About />
