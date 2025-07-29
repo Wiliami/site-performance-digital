@@ -1,6 +1,5 @@
-import { Card, CardContent, CardHeader, CardTitle } from "./ui/card";
+import { Card, CardHeader, CardTitle } from "./ui/card";
 import { MedalIcon, MapIcon, PlaneIcon, GiftIcon } from "../components/Icons";
-
 
 interface FeatureProps {
   icon: JSX.Element;
@@ -28,8 +27,6 @@ const features: FeatureProps[] = [
 
 export const HowItWorks = () => {
   return (
-    
-    <>
     <section
       id="howItWorks"
       className="container text-center py-24 sm:py-32"
@@ -61,6 +58,5 @@ export const HowItWorks = () => {
         ))}
       </div>
     </section>
-    </>
   );
 };
