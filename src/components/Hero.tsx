@@ -1,7 +1,6 @@
 import { Button } from "./ui/button";
 import Logo from "../assets/logo.png";
 
-
 export const Hero = () => {
   return (
     <section className="container grid lg:grid-cols-1 place-items-center py-20 md:py-32 gap-10">
