@@ -29,7 +29,7 @@ export const Hero = () => {
   
       
           <h4 className="block text-4xl">
-          Seu negócio
+          DEPLOY ALTERADO COM SUCESSO
             <span className="inline text-red-600">{" "}
               precisa de uma avaliação urgente!
             </span>
