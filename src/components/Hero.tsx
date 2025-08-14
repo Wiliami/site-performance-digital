@@ -23,15 +23,15 @@ export const Hero = () => {
         <main className="text-5xl md:text-6xl font-bold">
           <h2 className="inline">
             <span className="inline text-4xl text-black dark:text-white bg-clip-text">
-              Investiu no <b className="text-green-500">Marketing</b>, porém não gerou o retorno esperado?
+              Investiu no <b className="text-green-500 italic">Marketing</b>, porém não gerou o retorno esperado?
             </span>{" "}
           </h2>
   
       
           <h4 className="block text-4xl">
-          DEPLOY ALTERADO COM SUCESSO
-            <span className="inline text-red-600">{" "}
-              precisa de uma avaliação urgente!
+          Seu negócio precisa de uma 
+            <span className="inline text-red-600 italic">{" "}
+             avaliação urgente!
             </span>
           </h4>
         </main>
