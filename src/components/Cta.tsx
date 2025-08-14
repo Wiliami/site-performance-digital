@@ -12,7 +12,7 @@ export const Cta = () => {
             Todas as suas
             <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">
               {" "}
-              ideais e conceitos{" "}
+              ideais e conceitos{" "} TEXTO ALTERADO
             </span>
             em uma única Interface
           </h2>
