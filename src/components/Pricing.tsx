@@ -26,48 +26,53 @@ interface PricingProps {
 
 const pricingList: PricingProps[] = [
   {
-    title: "Free",
+    title: "Plano Start",
     popular: 0,
-    price: 0,
+    price: 1200,
     description:
-      "Serviços dedicados para o sucesso da sua empresa.",
-    buttonText: "Iniciar",
+      "Otimização ou criação do Google Meu Negócio (SEO local, fotos, descrição persuasiva, categorias e horários).",
+    buttonText: "Escolher",
     benefitList: [
-      "1 membro da equipe",
-      "2 GB de armazenamento",
-      "Até 4 páginas",
-      "Suporte da comunidade",
-      "Edição de páginas HTML",
+      "Até 8 postagens/mês (estáticas ou carrossel)",
+      "2 stories semanais",
+      "Meta Ads (Facebook/Instagram)",
+      "Até 6 criativos/mês (estáticos)",
+      "Identidade visual básica (logotipo simples + paleta de cores)",
+      "Relatório mensal com métricas simples (alcance, cliques, leads)"
     ],
   },
   {
-    title: "Premium",
+    title: "Plano Premium",
     popular: 1,
-    price: 700,
+    price: 4000,
     description:
-      "Serviços dedicados para o sucesso da sua empresa.",
-    buttonText: "Iniciar teste grátis",
+      "Objetivo: Crescimento acelerado com estratégia e gestão completas.",
+    buttonText: "Escolher",
     benefitList: [
-      "4 membros da equipe",
-      "4 GB de armazenamento",
-      "Até 6 páginas",
-      "Prioridade no suporte",
-      "Edição de páginas HTML",
+      "Criação de site profissional (design personalizado, SEO avançado, páginas de captura)",
+      "15 postagens/mês (estáticos, carrossel, vídeos)",
+      "1 vídeo profissional/mês",
+      "Meta Ads, Google Ads, LinkedIn Ads (opcional)",
+      "15 criativos/mês (estáticos + animados)",
+      "Segmentação por público (frio, morno, quente) e remarketing"
     ],
   },
   {
     title: "Empresarial",
     popular: 0,
-    price: 1000,
+    price: 10000,
     description:
       "Serviços dedicados para o sucesso da sua empresa.",
     buttonText: "Contate-nos",
     benefitList: [
-      "10 membros da equipe",
-      "8 GB de armazenamento",
-      "Até 10 páginas",
-      "Prioridade no suporte",
-      "Edição de páginas HTML"
+      "Auditoria de mídia paga",
+      "Auditoria de setor comercial",
+      "Plano estratégico de 12 meses",
+      "Diagnóstico de ambientes (CRO)",
+      "Manual de Identidade Visual",
+      "Manual de Comunicação",
+      "Réguas de CRM",
+      "Prioridade no suporte"
     ],
   },
 ];

@@ -25,7 +25,7 @@ const teamList: TeamProps[] = [
   {
     image: "https://i.pravatar.cc/150?img=11",
     name: "Erick Raphael",
-    position: "Product Manager",
+    position: "Head marketing",
     socialNetworks: [
       {
         name: "Linkedin",
@@ -44,7 +44,7 @@ const teamList: TeamProps[] = [
   {
     image: "https://i.pravatar.cc/150?img=52",
     name: "Braz Junior",
-    position: "Tech Lead",
+    position: "Front-end Developer",
     socialNetworks: [
       {
         name: "Linkedin",
@@ -63,7 +63,7 @@ const teamList: TeamProps[] = [
   {
     image: "https://avatars.githubusercontent.com/u/67030481?v=4",
     name: "Wiliamis Oliveira",
-    position: "Developer",
+    position: "Back-end Developer",
     socialNetworks: [
       {
         name: "Linkedin",
@@ -78,8 +78,8 @@ const teamList: TeamProps[] = [
   },
   {
     image: "https://i.pravatar.cc/150?img=57",
-    name: "John",
-    position: "Head marketing",
+    name: "Johnatan Almeida",
+    position: "Creative Marketing",
     socialNetworks: [
       {
         name: "Linkedin",
