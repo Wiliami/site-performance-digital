@@ -1,28 +1,32 @@
+import Salao from "../assets/Salao.jpeg";
+import FreeCar from "../assets/FreeCar.jpeg";
+import ParanaPerformance from "../assets/ParanaPerformance.jpeg";
+
 // import React from "react";
 const testimonials = [
   {
     name: 'Paraná Performance',
     role: 'Manutenção automotiva',
-    image: "https://i.pravatar.cc/100?img=59",
+    image: ParanaPerformance,
     rating: 5,
     feedback:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.',
+      'Tínhamos dificuldade em conseguir clientes novos e qualificados. Depois da otimização no Google Meu Negócio, começamos a aparecer com mais destaque para quem realmente busca por oficina mecânica em Santarém. Hoje temos muito mais visibilidade, novos clientes chegando e um reconhecimento muito maior online.',
   },
   {
     name: 'Free Car Auto Center',
     role: 'Climatização automotiva',
-    image: 'https://i.pravatar.cc/100?img=65',
+    image: FreeCar,
     rating: 5,
     feedback:
-      'Antes da Performance Digital, tínhamos dificuldades em aparecer no Google e quase não recebíamos contatos novos. Depois do trabalho de otimização, nossa oficina passou a se destacar nas buscas, e hoje já estamos gerando leads consistentes toda semana. O resultado superou nossas expectativas!.',
+      'Agora novos clientes encontram nossa oficina pelo Google. Estamos recebendo mais contatos e fechando mais serviços de ar condicionado e climatização automotiva. O resultado foi muito acima do esperado!',
   },
   {
     name: 'Salão Deus é Mestre',
     role: 'Salão de beleza',
-    image: 'https://i.pravatar.cc/100?img=9',
+    image: Salao,
     rating: 5,
     feedback:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.',
+      ' "Antes da agência a dificuldade de atrair clientes online, quase ninguém encontrava meu salão. Depois da otimização, notei que realmente aumentou a procura por salão de beleza na região. Hoje consigo mais agendamentos e clientes chegando direto pelo perfil. Foi a melhor decisão que tomei para o meu negócio."',
   },
 ];
 

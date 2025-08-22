@@ -1,21 +1,19 @@
-import { createContext, useContext, useEffect, useState } from "react";
+// OPÇÃO 1: Provider simplificado (mantém a estrutura caso precise no futuro)
+import { createContext, useContext, useEffect } from "react";
 
-type Theme = "dark" | "light" | "system";
+type Theme = "dark" | "light";
 
 type ThemeProviderProps = {
   children: React.ReactNode;
   defaultTheme?: Theme;
-  storageKey?: string;
 };
 
 type ThemeProviderState = {
   theme: Theme;
-  setTheme: (theme: Theme) => void;
 };
 
 const initialState: ThemeProviderState = {
-  theme: "system",
-  setTheme: () => null,
+  theme: "dark",
 };
 
 const ThemeProviderContext = createContext<ThemeProviderState>(initialState);
@@ -23,44 +21,20 @@ const ThemeProviderContext = createContext<ThemeProviderState>(initialState);
 export function ThemeProvider({
   children,
   defaultTheme = "dark",
-  storageKey = "vite-ui-theme",
   ...props
 }: ThemeProviderProps) {
-  const [theme, setTheme] = useState<Theme>(
-    () => (localStorage.getItem(storageKey) as Theme) || defaultTheme
-  );
-
   useEffect(() => {
     const root = window.document.documentElement;
-
     root.classList.remove("light", "dark");
-
-    if (theme === "system") {
-      const systemTheme = window.matchMedia("(prefers-color-scheme: dark)")
-        .matches
-        ? "dark"
-        : "light";
-
-      root.classList.add(systemTheme);
-      return;
-    }
-
-    root.classList.add(theme);
-  }, [theme]);
+    root.classList.add(defaultTheme);
+  }, [defaultTheme]);
 
   const value = {
-    theme,
-    setTheme: (theme: Theme) => {
-      localStorage.setItem(storageKey, theme);
-      setTheme(theme);
-    },
+    theme: defaultTheme,
   };
 
   return (
-    <ThemeProviderContext.Provider
-      {...props}
-      value={value}
-    >
+    <ThemeProviderContext.Provider {...props} value={value}>
       {children}
     </ThemeProviderContext.Provider>
   );
@@ -74,3 +48,22 @@ export const useTheme = () => {
 
   return context;
 };
+
+// ===================================
+
+// OPÇÃO 2: Ainda mais simples - apenas aplica o tema sem Context
+export function SimpleThemeProvider({
+  children,
+  theme = "dark",
+}: {
+  children: React.ReactNode;
+  theme?: "dark" | "light";
+}) {
+  useEffect(() => {
+    const root = window.document.documentElement;
+    root.classList.remove("light", "dark");
+    root.classList.add(theme);
+  }, [theme]);
+
+  return <>{children}</>;
+}

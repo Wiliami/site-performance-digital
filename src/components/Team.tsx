@@ -1,3 +1,5 @@
+import john from "./assets/john.jpeg";
+
 import { buttonVariants } from "@/components/ui/button";
 import {
   Card,
@@ -23,7 +25,7 @@ interface SociaNetworkslProps {
 
 const teamList: TeamProps[] = [
   {
-    image: "https://i.pravatar.cc/150?img=11",
+    image: "https://0.gravatar.com/avatar/7d390d9e32b7fe3474183d3fb8ecb1b4c2811cb99429e24b1874551aef20a10f?size=256&d=initials",
     name: "Erick Raphael",
     position: "Head marketing",
     socialNetworks: [
@@ -41,25 +43,7 @@ const teamList: TeamProps[] = [
       },
     ],
   },
-  {
-    image: "https://i.pravatar.cc/150?img=52",
-    name: "Braz Junior",
-    position: "Front-end Developer",
-    socialNetworks: [
-      {
-        name: "Linkedin",
-        url: "https://www.linkedin.com/in/leopoldo-miranda/",
-      },
-      {
-        name: "Facebook",
-        url: "https://www.facebook.com/",
-      },
-      {
-        name: "Instagram",
-        url: "https://www.instagram.com/",
-      },
-    ],
-  },
+  
   {
     image: "https://avatars.githubusercontent.com/u/67030481?v=4",
     name: "Wiliamis Oliveira",
@@ -77,8 +61,28 @@ const teamList: TeamProps[] = [
     ],
   },
   {
-    image: "https://i.pravatar.cc/150?img=57",
-    name: "Johnatan Almeida",
+    image: "https://avatars.githubusercontent.com/u/90149109?v=4",
+    name: "Braz Junior",
+    position: "Front-end Developer",
+    socialNetworks: [
+      {
+        name: "Linkedin",
+        url: "https://www.linkedin.com/in/leopoldo-miranda/",
+      },
+      {
+        name: "Facebook",
+        url: "https://www.facebook.com/",
+      },
+      {
+        name: "Instagram",
+        url: "https://www.instagram.com/",
+      },
+    ],
+  },
+
+  {
+    image: "https://2.gravatar.com/avatar/437dadf011284df43d90e2528a45bd211d51b51ec0414ef8ea094d021281fe08?size=256&d=initials",
+    name: "Jhonatan Almeida",
     position: "Creative Marketing",
     socialNetworks: [
       {

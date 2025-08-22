@@ -18,13 +18,28 @@ enum PopularPlanType {
 interface PricingProps {
   title: string;
   popular: PopularPlanType;
-  price: number;
+  price: number | string;
   description: string;
   buttonText: string;
   benefitList: string[];
 }
 
 const pricingList: PricingProps[] = [
+  {
+    title: "Diagnóstico Gratuito",
+    popular: 0,
+    price: 0,
+    description:
+      "Análise realizada por especialistas para otimizar seu business!",
+    buttonText: "Entrar em contato",
+    benefitList: [
+      "Feedbacks focalizados",
+      "Melhorias imediatas",
+      "Foco em campanhas criativas",
+      "Nivelamento de nicho",
+      "Identidade visual básica",
+    ],
+  },
   {
     title: "Plano Start",
     popular: 0,
@@ -58,21 +73,22 @@ const pricingList: PricingProps[] = [
     ],
   },
   {
-    title: "Empresarial",
+    title: "Plano Empresarial",
     popular: 0,
-    price: 10000,
+    price: "A negociar",
     description:
-      "Serviços dedicados para o sucesso da sua empresa.",
-    buttonText: "Contate-nos",
+      "Soluções completas para empresas que buscam liderança de mercado e acompanhamento estratégico.",
+    buttonText: "Entrar em contato",
     benefitList: [
       "Auditoria de mídia paga",
-      "Auditoria de setor comercial",
-      "Plano estratégico de 12 meses",
-      "Diagnóstico de ambientes (CRO)",
-      "Manual de Identidade Visual",
+      "Auditoria do setor comercial",
+      "Plano estratégico de 12 meses totalmente personalizado",
+      "Diagnóstico de conversão (CRO)",
+      "Manual de Identidade Visual completo",
       "Manual de Comunicação",
-      "Réguas de CRM",
-      "Prioridade no suporte"
+      "Implementação de CRM com réguas de relacionamento",
+      "Equipe dedicada e suporte prioritário",
+      "Relatórios executivos avançados (foco em resultados e tomada de decisão)"
     ],
   },
 ];
@@ -94,7 +110,7 @@ export const Pricing = () => {
       <h3 className="text-xl text-center text-muted-foreground pt-4 pb-8">
         Obtenha os serviços que mais se encaixam com o negócio da sua empresa.
       </h3>
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
         {pricingList.map((pricing: PricingProps) => (
           <Card
             key={pricing.title}
@@ -117,15 +133,30 @@ export const Pricing = () => {
                 ) : null}
               </CardTitle>
               <div>
-                <span className="text-3xl font-bold">R${pricing.price}</span>
-                <span className="text-muted-foreground"> /mensal</span>
+                {typeof pricing.price === 'string' ? (
+                  <span className="text-xl text-muted-foreground">{pricing.price}</span>
+                ) : (
+                  <>
+                    <span className="text-3xl font-bold">R${pricing.price}</span>
+                    <span className="text-muted-foreground"> /mensal</span>
+                  </>
+                )}
               </div>
 
               <CardDescription>{pricing.description}</CardDescription>
             </CardHeader>
 
             <CardContent>
-              <Button className="w-full">{pricing.buttonText}</Button>
+              {pricing.buttonText === "Entrar em contato" ? (
+                <Button 
+                  className="w-full" 
+                  onClick={() => window.open("https://wa.me/92982511393", "_blank")}
+                >
+                  {pricing.buttonText}
+                </Button>
+              ) : (
+                <Button className="w-full">{pricing.buttonText}</Button>
+              )}
             </CardContent>
 
             <hr className="w-4/5 m-auto mb-4" />
