@@ -18,7 +18,7 @@ enum PopularPlanType {
 interface PricingProps {
   title: string;
   popular: PopularPlanType;
-  price: number;
+  price: number | string;
   description: string;
   buttonText: string;
   benefitList: string[];
@@ -26,48 +26,69 @@ interface PricingProps {
 
 const pricingList: PricingProps[] = [
   {
-    title: "Free",
+    title: "Diagnóstico Gratuito",
     popular: 0,
     price: 0,
     description:
-      "Serviços dedicados para o sucesso da sua empresa.",
-    buttonText: "Iniciar",
+      "Análise realizada por especialistas para otimizar seu business!",
+    buttonText: "Entrar em contato",
     benefitList: [
-      "1 membro da equipe",
-      "2 GB de armazenamento",
-      "Até 4 páginas",
-      "Suporte da comunidade",
-      "Edição de páginas HTML",
+      "Feedbacks focalizados",
+      "Melhorias imediatas",
+      "Foco em campanhas criativas",
+      "Nivelamento de nicho",
+      "Identidade visual básica",
     ],
   },
   {
-    title: "Premium",
-    popular: 1,
-    price: 700,
-    description:
-      "Serviços dedicados para o sucesso da sua empresa.",
-    buttonText: "Iniciar teste grátis",
-    benefitList: [
-      "4 membros da equipe",
-      "4 GB de armazenamento",
-      "Até 6 páginas",
-      "Prioridade no suporte",
-      "Edição de páginas HTML",
-    ],
-  },
-  {
-    title: "Empresarial",
+    title: "Plano Start",
     popular: 0,
-    price: 1000,
+    price: 1200,
     description:
-      "Serviços dedicados para o sucesso da sua empresa.",
-    buttonText: "Contate-nos",
+      "Otimização ou criação do Google Meu Negócio (SEO local, fotos, descrição persuasiva, categorias e horários).",
+    buttonText: "Escolher",
     benefitList: [
-      "10 membros da equipe",
-      "8 GB de armazenamento",
-      "Até 10 páginas",
-      "Prioridade no suporte",
-      "Edição de páginas HTML"
+      "Até 8 postagens/mês (estáticas ou carrossel)",
+      "2 stories semanais",
+      "Meta Ads (Facebook/Instagram)",
+      "Até 6 criativos/mês (estáticos)",
+      "Identidade visual básica (logotipo simples + paleta de cores)",
+      "Relatório mensal com métricas simples (alcance, cliques, leads)"
+    ],
+  },
+  {
+    title: "Plano Premium",
+    popular: 1,
+    price: 4000,
+    description:
+      "Objetivo: Crescimento acelerado com estratégia e gestão completas.",
+    buttonText: "Escolher",
+    benefitList: [
+      "Criação de site profissional (design personalizado, SEO avançado, páginas de captura)",
+      "15 postagens/mês (estáticos, carrossel, vídeos)",
+      "1 vídeo profissional/mês",
+      "Meta Ads, Google Ads, LinkedIn Ads (opcional)",
+      "15 criativos/mês (estáticos + animados)",
+      "Segmentação por público (frio, morno, quente) e remarketing"
+    ],
+  },
+  {
+    title: "Plano Empresarial",
+    popular: 0,
+    price: "A negociar",
+    description:
+      "Soluções completas para empresas que buscam liderança de mercado e acompanhamento estratégico.",
+    buttonText: "Entrar em contato",
+    benefitList: [
+      "Auditoria de mídia paga",
+      "Auditoria do setor comercial",
+      "Plano estratégico de 12 meses totalmente personalizado",
+      "Diagnóstico de conversão (CRO)",
+      "Manual de Identidade Visual completo",
+      "Manual de Comunicação",
+      "Implementação de CRM com réguas de relacionamento",
+      "Equipe dedicada e suporte prioritário",
+      "Relatórios executivos avançados (foco em resultados e tomada de decisão)"
     ],
   },
 ];
@@ -89,7 +110,7 @@ export const Pricing = () => {
       <h3 className="text-xl text-center text-muted-foreground pt-4 pb-8">
         Obtenha os serviços que mais se encaixam com o negócio da sua empresa.
       </h3>
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
         {pricingList.map((pricing: PricingProps) => (
           <Card
             key={pricing.title}
@@ -112,15 +133,30 @@ export const Pricing = () => {
                 ) : null}
               </CardTitle>
               <div>
-                <span className="text-3xl font-bold">R${pricing.price}</span>
-                <span className="text-muted-foreground"> /mensal</span>
+                {typeof pricing.price === 'string' ? (
+                  <span className="text-xl text-muted-foreground">{pricing.price}</span>
+                ) : (
+                  <>
+                    <span className="text-3xl font-bold">R${pricing.price}</span>
+                    <span className="text-muted-foreground"> /mensal</span>
+                  </>
+                )}
               </div>
 
               <CardDescription>{pricing.description}</CardDescription>
             </CardHeader>
 
             <CardContent>
-              <Button className="w-full">{pricing.buttonText}</Button>
+              {pricing.buttonText === "Entrar em contato" ? (
+                <Button 
+                  className="w-full" 
+                  onClick={() => window.open("https://wa.me/92982511393", "_blank")}
+                >
+                  {pricing.buttonText}
+                </Button>
+              ) : (
+                <Button className="w-full">{pricing.buttonText}</Button>
+              )}
             </CardContent>
 
             <hr className="w-4/5 m-auto mb-4" />

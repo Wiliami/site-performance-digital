@@ -9,6 +9,8 @@ import { Testimonials } from "./components/Testimonials";
 import { Team } from "./components/Team";
 import { Footer } from "./components/Footer";
 import { ScrollToTop } from "./components/ScrollToTop";
+
+
 import "./App.css";
 
 function App() {  
@@ -21,8 +23,8 @@ function App() {
       <HowItWorks />
       <Cta />
       <Testimonials />
-      <Team />
       <Pricing />
+      <Team />
       <Footer />
       <ScrollToTop />
     </>

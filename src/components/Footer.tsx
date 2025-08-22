@@ -28,7 +28,7 @@ export const Footer = () => {
               Instagram
             </a>
           </div>
-
+          
           <div>
             <a
               rel="noreferrer noopener"
@@ -52,38 +52,6 @@ export const Footer = () => {
           
         </div>
 
-        <div className="flex flex-col gap-2">
-          <h3 className="font-bold text-lg">Plataformas</h3>
-          <div>
-            <a
-              rel="noreferrer noopener"
-              href="#"
-              className="opacity-60 hover:opacity-100"
-            >
-              Web
-            </a>
-          </div>
-
-          <div>
-            <a
-              rel="noreferrer noopener"
-              href="#"
-              className="opacity-60 hover:opacity-100"
-            >
-              Mobile
-            </a>
-          </div>
-
-          <div>
-            <a
-              rel="noreferrer noopener"
-              href="#"
-              className="opacity-60 hover:opacity-100"
-            >
-              Desktop
-            </a>
-          </div>
-        </div>
 
         <div className="flex flex-col gap-2">
           <h3 className="font-bold text-lg">Sobre nós</h3>
@@ -136,7 +104,7 @@ export const Footer = () => {
               href="#"
               className="opacity-60 hover:opacity-100"
             >
-              Discord
+              Site Oficial
             </a>
           </div>
         </div>
@@ -144,14 +112,14 @@ export const Footer = () => {
 
       <section className="container pb-14 text-center">
         <h3>
-          &copy; 2025 Landing page made by{" "}
+          &copy; 2025 developed by{" "}
           <a
             rel="noreferrer noopener"
             target="_blank"
             href="https://www.linkedin.com/in/leopoldo-miranda/"
             className="text-primary transition-all border-primary hover:border-b-2"
           >
-            Leo Miranda
+            Performance Agency
           </a>
         </h3>
       </section>
