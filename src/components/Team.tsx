@@ -12,7 +12,7 @@ import {
 import { Facebook, Instagram, Linkedin } from "lucide-react";
 
 interface TeamProps {
-  image: string;
+  image: string | any;
   name: string;
   position: string;
   socialNetworks: SociaNetworkslProps[];
