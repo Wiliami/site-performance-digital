@@ -1,8 +1,7 @@
-import React from "react";
 import { Zap, Mail, Phone, MapPin, Facebook, Instagram, Linkedin, Twitter } from "lucide-react";
 
 export function Footer() {
-  const scrollToSection = (sectionId) => {
+  const scrollToSection = (sectionId: any) => {
     document.getElementById(sectionId)?.scrollIntoView({ behavior: 'smooth' });
   };
 
