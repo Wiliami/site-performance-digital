@@ -1,14 +1,13 @@
 import { Title } from "./components/Title"
-import { Navbar } from "./components/Navbar";
-import { Hero } from "./components/Hero";
-import { About } from "./components/About";
-import { HowItWorks } from "./components/HowItWorks";
-import { Cta } from "./components/Cta";
-import { Pricing } from "./components/Pricing";
-import { Testimonials } from "./components/Testimonials";
-import { Team } from "./components/Team";
-import { Footer } from "./components/Footer";
-import { ScrollToTop } from "./components/ScrollToTop";
+import { Navbar } from "./components/landingpage/Navbar";
+import { HeroSection } from "./components/landingpage/HeroSection";
+import { BenefitsSection } from "./components/landingpage/BenefitsSection";
+import { StorytellingSection } from "./components/landingpage/StoryTelling";
+import { MarketingFlowDemo } from "./components/landingpage/MarketingFlowDemo";
+import { TestimonialsSection } from "./components/landingpage/TestimonialsSection";
+import { CTASection } from "./components/landingpage/CTASection";
+import { ContactFormSection } from "./components/landingpage/ContactFormSection";
+import { Footer } from "./components/landingpage/Footer";
 
 
 import "./App.css";
@@ -18,15 +17,14 @@ function App() {
     <>
       <Title />
       <Navbar />
-      <Hero />
-      <About />
-      <HowItWorks />
-      <Cta />
-      <Testimonials />
-      <Pricing />
-      <Team />
+      <HeroSection />
+      <BenefitsSection />
+      <StorytellingSection />
+      <MarketingFlowDemo />
+      <TestimonialsSection />
+      <CTASection />
+      <ContactFormSection />
       <Footer />
-      <ScrollToTop />
     </>
   );
 }

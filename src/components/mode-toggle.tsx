@@ -9,7 +9,10 @@ import { useTheme } from "@/components/theme-provider";
 import { Moon, Sun } from "lucide-react";
 
 export function ModeToggle() {
-  const { setTheme } = useTheme();
+  const { theme } = useTheme();
+
+
+  
 
   return (
     <DropdownMenu>
