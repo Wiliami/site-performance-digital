@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { 
   Rocket, 
@@ -7,7 +7,7 @@ import {
   BarChart3, 
   Users, 
   Award,
-  TrendingUp,
+  // TrendingUp,
   Smartphone
 } from "lucide-react";
 import { motion } from "framer-motion";

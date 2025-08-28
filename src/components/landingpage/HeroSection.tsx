@@ -1,4 +1,3 @@
-import React from "react";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, TrendingUp, Target, BarChart3, Play } from "lucide-react";
 import { motion } from "framer-motion";
